@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Door 4 — Time</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Crimson+Pro:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="time">
+  <div class="doorframe" aria-hidden="true"><div class="door left"></div><div class="door right"></div></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header role="banner">
+    <nav class="nav" aria-label="Breadcrumb">
+      <div class="brand">doors <em>α</em></div>
+      <div class="path">time • <span aria-live="polite">door 4 / 5</span></div>
+    </nav>
+  </header>
+
+  <main role="main">
+    <article class="card" aria-labelledby="t4">
+      <div class="head">
+        <h1 id="t4" class="title">Time is a habit the universe can’t quite break.</h1>
+        <div class="sub">Microscopic laws are reversible; everyday life is not.</div>
+      </div>
+      <div class="body">
+        <div class="grid">
+          <section class="col-7">
+            <p>Many fundamental equations don’t care which way you run them, but everyday processes do. A cracked egg won’t uncrack because there are far more disordered arrangements than ordered ones. The <strong>second law of thermodynamics</strong> quantifies this drift toward higher entropy in closed systems.</p>
+            <p>The “arrow of time” is therefore statistical: it emerges from the imbalance between the number of microstates in past and future macrostates. Why the early universe had such low entropy remains an open cosmological question.</p>
+            <blockquote>We surf a gradient of possibility and call it the present.</blockquote>
+            <p>Relativity adds geometry: light cones bound what can influence what. Many physicists describe a “block universe” where past and future are just differently placed events; our sense of flow may be local and psychological.</p>
+
+            <details class="sources">
+              <summary>Sources</summary>
+              <ul>
+                <li>Britannica: <a href="https://www.britannica.com/science/second-law-of-thermodynamics" target="_blank" rel="noopener">Second Law</a></li>
+                <li>Britannica: <a href="https://www.britannica.com/science/entropy-physics" target="_blank" rel="noopener">Entropy</a></li>
+                <li>Britannica: <a href="https://www.britannica.com/science/arrow-of-time" target="_blank" rel="noopener">Arrow of time</a></li>
+              </ul>
+            </details>
+          </section>
+
+          <aside class="col-5 panel" aria-labelledby="time-viz">
+            <h2 id="time-viz" class="sub">Interactive — light cone</h2>
+            <div class="controls">
+              <button id="play" class="btn" type="button">play</button>
+              <button id="pause" class="btn" type="button">pause</button>
+            </div>
+            <svg id="lightcone" viewBox="0 0 260 200" role="img" aria-label="Light cone diagram">
+              <defs>
+                <linearGradient id="grad" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#4ee2c0" stop-opacity="0.6"/>
+                  <stop offset="100%" stop-color="#e28cff" stop-opacity="0.2"/>
+                </linearGradient>
+              </defs>
+              <rect x="0" y="0" width="260" height="200" fill="#0b0f10" rx="12" />
+              <polygon points="130,20 200,100 130,180 60,100" fill="url(#grad)" stroke="rgba(255,255,255,.06)"/>
+              <line x1="130" y1="20" x2="130" y2="180" stroke="#fff" stroke-opacity=".4"/>
+              <circle id="now" cx="130" cy="160" r="5" fill="#4ee2c0"/>
+            </svg>
+          </aside>
+        </div>
+      </div>
+
+      <div class="body" style="padding-top:0">
+        <a class="btn" href="page5.html" data-next="page5.html">open next door</a>
+      </div>
+    </article>
+  </main>
+
+  <footer role="contentinfo">we live at the slope of entropy • <a href="https://www.iasp.info/suicidalthoughts/" target="_blank" rel="noopener">If you need help, support is available</a>.</footer>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
