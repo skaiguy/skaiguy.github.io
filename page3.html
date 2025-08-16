@@ -26,6 +26,7 @@
         <h1 id="t3" class="title">Before you look, the cat is a sentence with two endings.</h1>
         <div class="sub">Superposition speaks softly; measurement raises its voice.</div>
       </div>
+
       <div class="body">
         <div class="grid">
           <section class="col-7">
@@ -45,11 +46,67 @@
             </details>
           </section>
 
+          <!-- THE INTERACTIVE -->
           <aside class="col-5 panel" aria-labelledby="quantum-viz">
             <h2 id="quantum-viz" class="sub">Interactive — Schrödinger’s box</h2>
             <p id="state" aria-live="polite">superposition: |alive〉 + |dead〉</p>
             <button id="observe" class="btn" type="button" aria-describedby="state">observe</button>
-            <div class="panel" style="margin-top:12px" aria-label="closed box"><p class="sub">click “observe” to collapse the state</p></div>
+
+            <figure class="cat" aria-label="Pixel cat that collapses alive/dead">
+              <!-- Pixel-style SVG. Two groups; JS toggles visibility. -->
+              <svg viewBox="0 0 160 120" role="img" aria-labelledby="catTitle">
+                <title id="catTitle">Quantum Cat</title>
+
+                <!-- ALIVE -->
+                <g id="catAlive">
+                  <!-- body -->
+                  <rect x="40" y="62" width="80" height="40" fill="#9aa3a9" stroke="#2a2f32" stroke-width="2" rx="4"/>
+                  <!-- head -->
+                  <rect x="26" y="34" width="52" height="42" fill="#9aa3a9" stroke="#2a2f32" stroke-width="2" rx="4"/>
+                  <!-- ears -->
+                  <polygon points="30,34 40,20 50,34" fill="#9aa3a9" stroke="#2a2f32" stroke-width="2"/>
+                  <polygon points="54,34 64,20 74,34" fill="#9aa3a9" stroke="#2a2f32" stroke-width="2"/>
+                  <!-- eyes -->
+                  <rect x="40" y="48" width="6" height="6" fill="#111"/>
+                  <rect x="58" y="48" width="6" height="6" fill="#111"/>
+                  <!-- eyelids (blink) -->
+                  <rect class="blink" x="40" y="48" width="6" height="6" fill="#9aa3a9"/>
+                  <rect class="blink" x="58" y="48" width="6" height="6" fill="#9aa3a9"/>
+                  <!-- mouth -->
+                  <rect x="51" y="58" width="6" height="2" fill="#111"/>
+                  <!-- tail -->
+                  <rect class="tail" x="118" y="70" width="28" height="10" rx="5" fill="#9aa3a9" stroke="#2a2f32" stroke-width="2"/>
+                  <!-- feet -->
+                  <rect x="50" y="100" width="8" height="4" fill="#2a2f32"/>
+                  <rect x="100" y="100" width="8" height="4" fill="#2a2f32"/>
+                </g>
+
+                <!-- DEAD -->
+                <g id="catDead" class="hidden">
+                  <!-- body -->
+                  <rect x="40" y="62" width="80" height="40" fill="#b0b0b0" stroke="#2a2f32" stroke-width="2" rx="4"/>
+                  <!-- head -->
+                  <rect x="26" y="34" width="52" height="42" fill="#b0b0b0" stroke="#2a2f32" stroke-width="2" rx="4"/>
+                  <!-- ears -->
+                  <polygon points="30,34 40,20 50,34" fill="#b0b0b0" stroke="#2a2f32" stroke-width="2"/>
+                  <polygon points="54,34 64,20 74,34" fill="#b0b0b0" stroke="#2a2f32" stroke-width="2"/>
+                  <!-- X eyes -->
+                  <line x1="38" y1="48" x2="46" y2="56" stroke="#111" stroke-width="3"/>
+                  <line x1="46" y1="48" x2="38" y2="56" stroke="#111" stroke-width="3"/>
+                  <line x1="56" y1="48" x2="64" y2="56" stroke="#111" stroke-width="3"/>
+                  <line x1="64" y1="48" x2="56" y2="56" stroke="#111" stroke-width="3"/>
+                  <!-- open mouth + tongue -->
+                  <rect x="50" y="58" width="8" height="5" fill="#111" rx="1"/>
+                  <rect x="52" y="63" width="4" height="6" fill="#ff7aa2"/>
+                  <!-- stiff tail -->
+                  <rect x="118" y="70" width="28" height="10" rx="5" fill="#b0b0b0" stroke="#2a2f32" stroke-width="2"/>
+                  <!-- feet -->
+                  <rect x="50" y="100" width="8" height="4" fill="#2a2f32"/>
+                  <rect x="100" y="100" width="8" height="4" fill="#2a2f32"/>
+                </g>
+              </svg>
+              <figcaption class="sub">press “observe” to collapse the state</figcaption>
+            </figure>
           </aside>
         </div>
       </div>
