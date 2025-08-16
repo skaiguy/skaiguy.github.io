@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Door 3 — Quantum</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Crimson+Pro:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="quantum">
+  <div class="doorframe" aria-hidden="true"><div class="door left"></div><div class="door right"></div></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header role="banner">
+    <nav class="nav" aria-label="Breadcrumb">
+      <div class="brand">doors <em>α</em></div>
+      <div class="path">quantum • <span aria-live="polite">door 3 / 5</span></div>
+    </nav>
+  </header>
+
+  <main role="main">
+    <article class="card" aria-labelledby="t3">
+      <div class="head">
+        <h1 id="t3" class="title">Before you look, the cat is a sentence with two endings.</h1>
+        <div class="sub">Superposition speaks softly; measurement raises its voice.</div>
+      </div>
+      <div class="body">
+        <div class="grid">
+          <section class="col-7">
+            <p>In quantum theory, states can add: a system may be in a <em>superposition</em> of alternatives. Schrödinger’s “cat” was a <em>thought experiment</em> to highlight the absurdity of extending this to macroscopic creatures, not a proposal for cruelty.</p>
+            <p>On measurement, superpositions appear to “collapse” into definite outcomes. <strong>Decoherence</strong> shows how the environment rapidly scrambles delicate phase relations, making interference unobservable in practice. It explains the classical world’s appearance, though philosophers debate whether it solves the measurement problem fully.</p>
+            <p>Interpretations differ. <strong>Copenhagen</strong> emphasizes experimental context and outcomes; <strong>Many-Worlds</strong> keeps the wavefunction universal and denies collapse, branching outcomes instead. Both reproduce the same statistics while leaving different metaphysical baggage.</p>
+            <p class="sub">Disclaimer: “quantum immortality” is speculative and not accepted mainstream physics.</p>
+
+            <details class="sources">
+              <summary>Sources</summary>
+              <ul>
+                <li>Schrödinger (1935) trans.: <a href="https://unicamp.br/~chibeni/textosdidaticos/schrodinger-1935-cat.pdf" target="_blank" rel="noopener">cat essay</a></li>
+                <li>Zurek, RMP (2003): <a href="https://link.aps.org/doi/10.1103/RevModPhys.75.715" target="_blank" rel="noopener">Decoherence & einselection</a></li>
+                <li>Schlosshauer, RMP (2004): <a href="https://link.aps.org/doi/10.1103/RevModPhys.76.1267" target="_blank" rel="noopener">Decoherence & measurement</a></li>
+                <li>SEP: <a href="https://plato.stanford.edu/entries/qm-copenhagen/" target="_blank" rel="noopener">Copenhagen</a>, <a href="https://plato.stanford.edu/entries/qm-manyworlds/" target="_blank" rel="noopener">Many-Worlds</a></li>
+              </ul>
+            </details>
+          </section>
+
+          <aside class="col-5 panel" aria-labelledby="quantum-viz">
+            <h2 id="quantum-viz" class="sub">Interactive — Schrödinger’s box</h2>
+            <p id="state" aria-live="polite">superposition: |alive〉 + |dead〉</p>
+            <button id="observe" class="btn" type="button" aria-describedby="state">observe</button>
+            <div class="panel" style="margin-top:12px" aria-label="closed box"><p class="sub">click “observe” to collapse the state</p></div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="body" style="padding-top:0">
+        <a class="btn" href="page4.html" data-next="page4.html">open next door</a>
+      </div>
+    </article>
+  </main>
+
+  <footer role="contentinfo">measure at your own peril • <a href="https://www.iasp.info/suicidalthoughts/" target="_blank" rel="noopener">If you need help, support is available</a>.</footer>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
