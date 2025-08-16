@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta / SEO / Fonts -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Door 1 — Life</title>
+  <meta name="description" content="A contemplative loop through life, death, time, and quantum reality." />
+  <meta name="theme-color" content="#0a0b0c" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Crimson+Pro:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="canonical" href="https://skaiguy.github.io/">
+  <meta property="og:title" content="Door 1 — Life" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="A contemplative loop through life, death, time, and quantum reality." />
+  <meta property="og:site_name" content="Doors: Life • Death • Time • Quantum" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="life">
+  <!-- Door overlay -->
+  <div class="doorframe" aria-hidden="true">
+    <div class="door left"></div>
+    <div class="door right"></div>
+  </div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header role="banner" aria-label="Site header">
+    <nav class="nav" aria-label="Breadcrumb">
+      <div class="brand">doors <em>α</em></div>
+      <div class="path">life • <span aria-live="polite">door 1 / 5</span></div>
+    </nav>
+  </header>
+
+  <main role="main">
+    <article class="card" aria-labelledby="t1">
+      <div class="head">
+        <h1 id="t1" class="title">Life blooms at the edge of order.</h1>
+        <div class="sub">We grow by keeping chaos at bay—never perfectly.</div>
+      </div>
+      <div class="body">
+        <div class="grid">
+          <section class="col-7">
+            <p>Living systems are dynamic balances: energy flows, information is copied, errors repaired. Cells die in different ways. <strong>Apoptosis</strong> is a controlled, energy-dependent program that dismantles a cell neatly; it helps tissue stay healthy. By contrast, <strong>necrosis</strong> is messy—membranes rupture, contents spill, inflammation follows.</p>
+            <p>Across a lifetime, trillions of cells are made and unmade. The choreography matters: DNA is fragmented, proteins are cleaved, and neighbors clean the remains. These mechanisms prevent damage from spreading and enable renewal.</p>
+            <blockquote>What we call life is a moving boundary between pattern and decay.</blockquote>
+            <p>On larger scales, organisms maintain internal order by exporting entropy to their surroundings. The price of staying warm and coordinated is paid to the environment.</p>
+
+            <details class="sources">
+              <summary>Sources</summary>
+              <ul>
+                <li>StatPearls (2025): <a href="https://www.ncbi.nlm.nih.gov/books/NBK499821/" target="_blank" rel="noopener">Apoptosis</a></li>
+                <li>Nature Education: <a href="https://www.nature.com/scitable/content/apoptosis-controlled-demolition-at-the-cellular-level-14019111/" target="_blank" rel="noopener">Controlled demolition</a></li>
+                <li>StatPearls (2023): <a href="https://www.ncbi.nlm.nih.gov/books/NBK557627/" target="_blank" rel="noopener">Necrosis</a></li>
+                <li>NCBI: <a href="https://www.ncbi.nlm.nih.gov/books/NBK26873/" target="_blank" rel="noopener">Programmed Cell Death</a></li>
+                <li>Britannica: <a href="https://www.britannica.com/science/entropy-physics" target="_blank" rel="noopener">Entropy</a></li>
+              </ul>
+            </details>
+          </section>
+
+          <aside class="col-5 panel" aria-labelledby="life-viz">
+            <h2 id="life-viz" class="sub">Interactive — growth</h2>
+            <div class="controls">
+              <label for="growth">growth</label>
+              <input id="growth" type="range" min="10" max="100" value="60" aria-label="growth slider">
+            </div>
+            <canvas id="garden" aria-label="particle garden"></canvas>
+          </aside>
+        </div>
+      </div>
+
+      <div class="body" style="padding-top:0">
+        <a class="btn" href="page2.html" data-next="page2.html" aria-label="Open the next door">open next door</a>
+      </div>
+    </article>
+  </main>
+
+  <footer role="contentinfo">the seed remembers the forest • <a href="https://www.iasp.info/suicidalthoughts/" target="_blank" rel="noopener">If you need help, support is available</a>.</footer>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
